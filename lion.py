@@ -19,9 +19,9 @@ d = {}
 for i in a :
     if i in d.keys() :
         d[i][0] += 1
-        d[i][1] = 
+        d[i][1] = d[i][0] / (len(d) + 1) * 100
     else :
-        d[i][0] = 1
+        d[i] = [1, 1 / (len(d) + 1) * 100]
         
 print(d)
 print(d[input])
